@@ -1,0 +1,37 @@
+main {
+  .contacto-resc {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    .contacto {
+      font-size: 1.2em;
+      line-height: 1.8em;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+  }
+  .contacto-imagen {
+    img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      padding: 3em;
+      border-radius: 4px;
+    }
+  }
+
+  .contacto-admin {
+    padding: 1em;
+    padding-bottom: 3em;
+    .contacto {
+      font-size: 1.2em;
+      line-height: 1.8em;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+  }
+}

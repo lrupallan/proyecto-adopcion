@@ -1,0 +1,29 @@
+@import '../base/listas';
+
+footer {
+  background-color: map-get($map: $colores, $key: color3);
+  box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 0.5em;
+
+  #links-interes {
+    width: 100%;
+    background-color: map-get($map: $colores, $key: color4);
+    color: map-get($map: $colores, $key: color7);
+    font-size: nth($size, 6);
+    border-radius: 5px;
+    padding: 2px 4px 2px 4px;
+    font-weight: lighter;
+    }
+  ul {
+    li {
+      list-style: square;
+      font-size: nth($size, 3);
+      font-weight: lighter;
+      line-height: 1.7em;
+      
+      a {
+        color: map-get($map: $colores, $key: color5);
+      }
+    }
+  }
+}

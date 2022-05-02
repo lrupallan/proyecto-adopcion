@@ -1,0 +1,57 @@
+@import '../base/listas';
+@import '../base/mapas';
+
+.donaciones-intro {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  justify-content: space-evenly;
+  padding: 2em;
+  .texto-donar {
+    display: inline;
+    font-size: nth($size, 3);
+    width: 60%;
+  }
+
+  div {
+    img {
+      display: flex;
+      justify-content: flex-start;
+
+      @media screen and (max-width: 900px) {
+        width: 95%;
+      }
+    }
+  }
+}
+
+.donar-contenido {
+  .donaciones-mp {
+    padding-bottom: 3em;
+    padding-top: 2em;
+    font-size: nth($size, 2);
+    .linksmp {
+      list-style-type: square;
+      font-size: nth($size, 2);
+      li {
+        line-height: 1.5em;
+        a {
+          color: map-get($map: $colores, $key: color5);
+          
+        }
+      }
+    }
+  }
+
+  .donaciones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+    padding: 3em 0 4em 0;
+    .veterinaria {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}

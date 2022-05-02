@@ -1,0 +1,71 @@
+@import '../base/listas';
+@import '../base/extends';
+@import '../base/mixins';
+
+section {
+  #container-perro-gato {
+    #perro-gato {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      justify-content: space-evenly;
+      padding: 2em;
+
+      .display-animal {
+        @extend %flexbox;
+        height: 20%;
+        padding: 2em;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        .boton-animal {
+          width: 220px;
+          height: 100px;
+          background-color: map-get($map: $colores, $key: color1);
+          font-family: 'Mulish', sans-serif;
+          
+          @include botones(8px, nth($size, 7), bolder);
+
+          &:hover {
+            transform: scale(1.02);
+            transition: 0.2s;
+            text-decoration: underline 1px;
+          }
+        }
+        @media screen and (max-width: 900px) {
+          margin-bottom: 3em;
+        }
+      }
+    }
+  }
+  .viejitos {
+    padding-bottom: 4em;
+
+    #viejitos-header {
+      display: block;
+      text-align: center;
+    }
+    .vieji-seccion {
+      display: flex;
+      justify-content: center;
+      .display-animal {
+        @extend %flexbox;
+        height: 20%;
+        padding: 2em;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        .boton-animal {
+          width: 220px;
+          height: 100px;
+          background-color: map-get($map: $colores, $key: color4);
+          font-family: 'Mulish', sans-serif;
+          @include botones(8px, nth($size, 7), bolder);
+
+          &:hover {
+            transform: scale(1.02);
+            transition: 0.2s;
+            text-decoration: underline 1px;
+          }
+          
+        }
+      }
+    }
+  }
+}

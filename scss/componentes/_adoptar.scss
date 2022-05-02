@@ -1,0 +1,20 @@
+.adoptar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 2em;
+  
+  .texto-adopcion {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-size: nth($size, 3);
+    width: 60%;
+  }
+  .adopcion-imagen {
+    img {
+      display: flex;
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,8 @@
+@import '../base/listas';
+
+@mixin botones($radius, $fsize, $fweight) {
+  border-radius: $radius;
+  font-size: $fsize;
+  font-weight: $fweight;
+}
+
