@@ -2,14 +2,20 @@
 @import '../base/listas';
 
 body {
-  background-image: url("/multimedia/images/fondo.webp");
+  background-image: url('/multimedia/images/fondo.webp');
   background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
   main {
-    section {
+    .banner-container {
+      display: flex;
+      justify-content: center;
       .banner {
         width: 80%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 5em;
+        margin-top: 1em;
 
         @media screen and (max-width: 900px) {
           display: none;
@@ -17,23 +23,29 @@ body {
       }
     }
     .presentacion {
+      margin-top: 2em;
+      margin-right: 3em;
       display: grid;
       grid-template-columns: auto auto;
       grid-template-rows: 1fr;
-      gap: 1em;
+      gap: 3em;
       grid-template-areas: 
                     "texto carrusel";
       .inicio {
-        font-size: 1.2em;
+        font-size: nth($size, 3);
         margin-left: 1em;
         text-align: justify;
         grid-area: texto;
   
         .texto-inicial {
           display: inline;
-          font-size: 1em;
+          font-size: nth($size, 1);
           text-align: center;
           padding-bottom: 3em;
+
+          a {
+            color: map-get($map: $colores, $key: color5);
+          }
         }
   
         @media screen and (max-width: 900px) {

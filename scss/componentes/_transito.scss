@@ -8,10 +8,15 @@
   @extend %flexbox;
 
   .transito-header {
+    background-color: map-get($map: $colores, $key: color2);
+    padding: 0.3em;
+    border-radius: 5px;
+    margin-left: 1em;
+    font-size: nth($list: $size, $n: 5);
     width: 40%;
+    font-weight: bold;
     text-align: center;
     border: 2px solid;
-    border-radius: 5px;
 
     @media screen and (max-width: 900px) {
       width: 90%;

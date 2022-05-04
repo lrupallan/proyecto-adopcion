@@ -16,15 +16,6 @@
     }
   }
   .box1 {
-    border-radius: 4px;
-    margin-left: 20px;
-    opacity: 0;
-    transition: 0.3s;
-    background-color: map-get($map: $colores, $key: color7);
-    margin-bottom: 0;
-    width: 95%;
-
-    &:hover {
       width: 80%;
       color: map-get($map: $colores, $key: color6);
       background-color: map-get($map: $colores, $key: color3);
@@ -34,14 +25,14 @@
       line-height: 1.7em;
       margin-left: 2em;
       padding-right: 1em;
-      margin-bottom: 2em;
+      padding: 0em 1em 0.5em 0.5em;
+      margin-bottom: 3em;
       margin-top: 0;
-    }
+  }
 
     ul {
       li {
         list-style: circle;
       }
     }
-  }
 }
