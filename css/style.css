@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Mulish&display=swap");
 html {
   font-family: "Mulish", sans-serif;
-  background-image: url("../../multimedia/images/fondo.webp");
+  background-image: url("../../multimedia/images/fondo.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -467,7 +467,7 @@ footer ul li a {
 }
 
 body {
-  background-image: url("/multimedia/images/fondo.webp");
+  background-image: url("../../multimedia/images/fondo.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -572,7 +572,7 @@ main .contacto-admin .contacto {
 }
 
 body {
-  background-image: url("/multimedia/images/fondo.webp");
+  background-image: url("../../multimedia/images/fondo.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
