@@ -18,18 +18,18 @@ main {
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 100%;
-      padding: 3em;
+      width: 95%;
+      
       border-radius: 4px;
     }
   }
 
   .contacto-admin {
-    padding: 1em;
-    padding-bottom: 3em;
+    margin-bottom: 3em;
     .contacto {
       font-size: nth($size, 3);
       line-height: 1.8em;
+      margin-left: 1em;
       justify-content: flex-start;
       align-items: flex-start;
     }

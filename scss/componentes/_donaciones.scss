@@ -11,6 +11,14 @@
     display: inline;
     font-size: nth($size, 3);
     width: 60%;
+
+    a {
+      color: map-get($map: $colores, $key: color5);
+    }
+
+    @media screen and (max-width: 1100px) {
+      width: 100%;
+    }
   }
 
   div {
@@ -26,11 +34,26 @@
 }
 
 .donar-contenido {
+  .box2 {
+    border-radius: 4px;
+    background-color: map-get($map: $colores, $key: color1);
+    margin-left: 20px;
+    background-size: contain;
+    width: 40%;
+    font-size: nth($size, 5);
+    padding: 0.5em;
+
+    @media screen and (max-width: 900px) {
+      width: 95%;
+    }
+    
+  }
   .donaciones-mp {
-    padding-bottom: 3em;
+    border-bottom: 3em;
     padding-top: 2em;
     font-size: nth($size, 2);
     .linksmp {
+      margin-top: 2em;
       list-style-type: square;
       font-size: nth($size, 2);
       li {
@@ -48,7 +71,7 @@
     flex-wrap: wrap;
     justify-content: space-around;
     flex-direction: row;
-    padding: 3em 0 4em 0;
+    margin-bottom: 4em;
     .veterinaria {
       display: flex;
       flex-direction: column;

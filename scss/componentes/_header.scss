@@ -17,26 +17,31 @@ header {
       flex-direction: row;
       justify-content: flex-end;
       align-items: flex-start;
+      margin: 0;
       width: 70%;
       .link-menu {
         padding: 1.5rem;
         text-align: center;
         list-style: none;
-        font-size: nth($size, 3);
         border-left: 1px solid map-get($map: $colores, $key: color6);
-        transition: background-color 0.4s;
 
         &:hover {
-          border: 3px map-get($map: $colores, $key: color6) solid;
-          text-decoration: underline solid;
-          transition: 0.2s;
-          opacity: 0.8;
+          text-decoration: underline overline 1px solid map-get($map: $colores, $key: color6);
+            transition: all 0.2s linear;
+            transform: translateY(5px);
+            color: map-get($map: $colores, $key: color6);
+            @media screen and (max-width: 900px) {
+              transition: all 0.2s linear;
+              transform: scale(1.3);
+            }
         }
+        
+
         a {
           text-decoration: none;
-          color: map-get($map: $colores, $key: color5);
+          font-size: nth($list: $size, $n: 4);
+          color: map-get($map: $colores, $key: color6);     
         }
-
 
         @media screen and (max-width: 900px) {
           width: 90%;
@@ -50,6 +55,7 @@ header {
         flex-direction: column;
         width: 90%;
         margin: 0;
+
       }
     }
 
@@ -58,9 +64,8 @@ header {
       flex-direction: column;
       margin: 0;
     }
-
-    &:hover {
-      margin-bottom: 2em;
-    }
+  }
+  @media screen and (max-width: 900px) {
+    margin-bottom: 5em;
   }
 }

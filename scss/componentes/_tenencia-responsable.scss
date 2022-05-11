@@ -33,6 +33,9 @@
     ul {
       li {
         list-style: circle;
+        a{
+          color: map-get($map: $colores, $key: color6);
+        }
       }
     }
 }

@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Mulish&display=swap");
 html {
   font-family: "Mulish", sans-serif;
-  background-image: url("/multimedia/images/fondo.webp");
+  background-image: url("../../multimedia/images/fondo.webp");
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -10,39 +10,67 @@ html {
 }
 
 h1 {
-  font-size: 1.7em;
-  background-color: #3aa382;
+  font-size: 4.5em;
+  font-family: "Bebas Neue", cursive;
   display: inline;
-  padding: 8px;
-  border-radius: 5px;
   margin-left: 0.5em;
-  width: 95%;
 }
 @media screen and (max-width: 900px) {
   h1 {
     display: flex;
     justify-content: center;
     text-align: center;
+    font-size: 1.7em;
+    font-family: "Mulish", sans-serif;
+    font-weight: lighter;
+    background-color: #3aa382;
+    padding: 8px;
+    border-radius: 5px;
+    margin-left: 0.5em;
+    width: 95%;
   }
 }
 
 h2 {
   display: inline;
-  background-color: #ee9835;
-  padding: 0.3em;
-  border-radius: 5px;
-  margin-left: 1em;
+  color: black;
+  font-family: "Bebas Neue", cursive;
+  font-size: 3em;
+  background-color: white 1;
+  border: 2px black;
+  border-style: solid none;
+  padding: 0.1em;
 }
 @media screen and (max-width: 900px) {
   h2 {
-    display: flex;
+    display: block;
     justify-content: center;
     padding: 0.5em;
     text-align: center;
+    background-color: #ee9835;
+    border-radius: 5px;
   }
 }
 
 h3 {
+  color: black;
+  font-family: "Mulish", sans-serif;
+  text-align: center;
+  display: inline-block;
+  font-size: 1.7em;
+}
+@media screen and (max-width: 900px) {
+  h3 {
+    display: block;
+    justify-content: center;
+    padding: 0.5em;
+    text-align: center;
+    background-color: #ee9835;
+    border-radius: 5px;
+  }
+}
+
+h4 {
   background-color: #e9d5d2;
   text-align: center;
   display: inline-block;
@@ -68,34 +96,37 @@ header nav ul {
   flex-direction: row;
   justify-content: flex-end;
   align-items: flex-start;
-  width: 60%;
+  margin: 0;
+  width: 70%;
 }
 header nav ul .link-menu {
   padding: 1.5rem;
-  background-color: black;
-  opacity: 0.7;
   text-align: center;
   list-style: none;
-  font-size: 1.2em;
   border-left: 1px solid black;
-  transition: background-color 0.4s;
 }
 header nav ul .link-menu:hover {
-  transform: scale(1.05);
-  border-radius: 2px;
-  text-decoration: underline solid;
-  transition: 0.2s;
-  background-color: black;
-  opacity: 0.8;
+  text-decoration: underline overline 1px solid black;
+  transition: all 0.2s linear;
+  transform: translateY(5px);
+  color: black;
+}
+@media screen and (max-width: 900px) {
+  header nav ul .link-menu:hover {
+    transition: all 0.2s linear;
+    transform: scale(1.3);
+  }
 }
 header nav ul .link-menu a {
   text-decoration: none;
-  color: #116046;
+  font-size: 1.3em;
+  color: black;
 }
 @media screen and (max-width: 900px) {
   header nav ul .link-menu {
     width: 90%;
     margin: 0;
+    border: none;
   }
 }
 @media screen and (max-width: 900px) {
@@ -111,6 +142,11 @@ header nav ul .link-menu a {
     display: flex;
     flex-direction: column;
     margin: 0;
+  }
+}
+@media screen and (max-width: 900px) {
+  header {
+    margin-bottom: 5em;
   }
 }
 
@@ -129,15 +165,6 @@ header nav ul .link-menu a {
   }
 }
 .box-tenencia-responsable .box1 {
-  border-radius: 4px;
-  margin-left: 20px;
-  opacity: 0;
-  transition: 0.3s;
-  background-color: white;
-  margin-bottom: 0;
-  width: 95%;
-}
-.box-tenencia-responsable .box1:hover {
   width: 80%;
   color: black;
   background-color: #e9d5d2;
@@ -147,11 +174,15 @@ header nav ul .link-menu a {
   line-height: 1.7em;
   margin-left: 2em;
   padding-right: 1em;
-  margin-bottom: 2em;
+  padding: 0em 1em 0.5em 0.5em;
+  margin-bottom: 3em;
   margin-top: 0;
 }
-.box-tenencia-responsable .box1 ul li {
+.box-tenencia-responsable ul li {
   list-style: circle;
+}
+.box-tenencia-responsable ul li a {
+  color: black;
 }
 
 .adoptar {
@@ -159,6 +190,7 @@ header nav ul .link-menu a {
   flex-wrap: wrap;
   justify-content: space-evenly;
   padding: 2em;
+  margin-bottom: 4em;
 }
 .adoptar .texto-adopcion {
   display: flex;
@@ -166,6 +198,11 @@ header nav ul .link-menu a {
   justify-content: flex-start;
   font-size: 1.2em;
   width: 60%;
+}
+@media screen and (max-width: 1100px) {
+  .adoptar .texto-adopcion {
+    width: 100%;
+  }
 }
 .adoptar .adopcion-imagen img {
   display: flex;
@@ -241,18 +278,19 @@ section .viejitos .vieji-seccion .display-animal .boton-animal:hover {
 }
 
 footer {
+  margin-top: 2em;
   background-color: #e9d5d2;
   box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding: 0.5em;
 }
 footer #links-interes {
   width: 100%;
-  background-color: #f67723;
-  color: white;
-  font-size: 1.7em;
+  font-family: "Bebas Neue", cursive;
+  font-weight: bold;
+  color: black;
+  font-size: 2.5em;
   border-radius: 5px;
   padding: 2px 4px 2px 4px;
-  font-weight: lighter;
 }
 footer ul li {
   list-style: square;
@@ -270,10 +308,15 @@ footer ul li a {
   line-height: 2;
 }
 .transito .transito-header {
+  background-color: #ee9835;
+  padding: 0.3em;
+  border-radius: 5px;
+  margin-left: 1em;
+  font-size: 1.5em;
   width: 40%;
+  font-weight: bold;
   text-align: center;
   border: 2px solid;
-  border-radius: 5px;
 }
 @media screen and (max-width: 900px) {
   .transito .transito-header {
@@ -363,6 +406,14 @@ footer ul li a {
   font-size: 1.2em;
   width: 60%;
 }
+.donaciones-intro .texto-donar a {
+  color: #116046;
+}
+@media screen and (max-width: 1100px) {
+  .donaciones-intro .texto-donar {
+    width: 100%;
+  }
+}
 .donaciones-intro div img {
   display: flex;
   justify-content: flex-start;
@@ -373,12 +424,27 @@ footer ul li a {
   }
 }
 
+.donar-contenido .box2 {
+  border-radius: 4px;
+  background-color: #3aa382;
+  margin-left: 20px;
+  background-size: contain;
+  width: 40%;
+  font-size: 1.5em;
+  padding: 0.5em;
+}
+@media screen and (max-width: 900px) {
+  .donar-contenido .box2 {
+    width: 95%;
+  }
+}
 .donar-contenido .donaciones-mp {
-  padding-bottom: 3em;
+  border-bottom: 3em;
   padding-top: 2em;
   font-size: 1.1em;
 }
 .donar-contenido .donaciones-mp .linksmp {
+  margin-top: 2em;
   list-style-type: square;
   font-size: 1.1em;
 }
@@ -393,7 +459,7 @@ footer ul li a {
   flex-wrap: wrap;
   justify-content: space-around;
   flex-direction: row;
-  padding: 3em 0 4em 0;
+  margin-bottom: 4em;
 }
 .donar-contenido .donaciones .veterinaria {
   display: flex;
@@ -406,19 +472,29 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
-body main section .banner {
+body main .banner-container {
+  display: flex;
+  justify-content: center;
+}
+body main .banner-container .banner {
   width: 80%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5em;
+  margin-top: 1em;
 }
 @media screen and (max-width: 900px) {
-  body main section .banner {
+  body main .banner-container .banner {
     display: none;
   }
 }
 body main .presentacion {
+  margin-top: 2em;
+  margin-right: 3em;
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: 1fr;
-  gap: 1em;
+  gap: 3em;
   grid-template-areas: "texto carrusel";
 }
 body main .presentacion .inicio {
@@ -433,13 +509,16 @@ body main .presentacion .inicio .texto-inicial {
   text-align: center;
   padding-bottom: 3em;
 }
-@media screen and (max-width: 900px) {
-  body main .presentacion .inicio {
-    margin: 1em;
-  }
+body main .presentacion .inicio .texto-inicial a {
+  color: #116046;
 }
 body main .presentacion #carouselExampleDark {
   grid-area: carrusel;
+}
+@media screen and (max-width: 767px) {
+  body main .presentacion #carouselExampleDark {
+    margin-left: 1.5em;
+  }
 }
 @media screen and (max-width: 1100px) {
   body main .presentacion {
@@ -456,6 +535,7 @@ body main .descripcion-carousel-mobile {
     display: block;
     background-color: #ee9835;
     margin: 0.7em;
+    margin-left: 2.5em;
   }
 }
 
@@ -477,17 +557,16 @@ main .contacto-imagen img {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  padding: 3em;
+  width: 95%;
   border-radius: 4px;
 }
 main .contacto-admin {
-  padding: 1em;
-  padding-bottom: 3em;
+  margin-bottom: 3em;
 }
 main .contacto-admin .contacto {
   font-size: 1.2em;
   line-height: 1.8em;
+  margin-left: 1em;
   justify-content: flex-start;
   align-items: flex-start;
 }
@@ -513,6 +592,10 @@ body .res-main .rescatista-presentacion .texto-resc {
   margin-left: 1em;
   text-align: justify;
   grid-area: texto;
+  margin-top: 3em;
+}
+body .res-main .rescatista-presentacion .texto-resc a {
+  color: #116046;
 }
 @media screen and (max-width: 900px) {
   body .res-main .rescatista-presentacion .texto-resc {
@@ -523,6 +606,7 @@ body .res-main .resc-container {
   display: flex;
   justify-content: space-around;
   padding: 1em;
+  margin-right: 3em;
 }
 @media screen and (max-width: 900px) {
   body .res-main {

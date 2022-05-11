@@ -1,10 +1,10 @@
 @import '../base/mapas';
 @import '../base/listas';
-@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Mulish&display=swap');
 
 html {
   font-family: 'Mulish', sans-serif;
-  background-image: url('/multimedia/images/fondo.webp');
+  background-image: url('../../multimedia/images/fondo.webp');
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -13,37 +13,65 @@ html {
 }
 
 h1 {
-  font-size: nth($size, 6);
-  background-color: map-get($map: $colores, $key: color1);
+  font-size: nth($size, 12);
+  font-family: 'Bebas Neue', cursive;
   display: inline;
-  padding: 8px;
-  border-radius: 5px;
   margin-left: 0.5em;
-  width: 95%;
 
   @media screen and (max-width: 900px) {
     display: flex;
     justify-content: center;
     text-align: center;
+    font-size: nth($size, 6);
+    font-family: 'Mulish', sans-serif;
+    font-weight: lighter;
+    background-color: map-get($map: $colores, $key: color1);
+    padding: 8px;
+    border-radius: 5px;
+    margin-left: 0.5em;
+    width: 95%;
   }
 }
 
 h2 {
   display: inline;
-  background-color: map-get($map: $colores, $key: color2);
-  padding: 0.3em;
-  border-radius: 5px;
-  margin-left: 1em;
+  color: map-get($map: $colores, $key: color6);
+  font-family: 'Bebas Neue', cursive;
+  font-size: nth($list: $size, $n: 9);
+  background-color: map-get($map: $colores, $key: color7) opacity($color: #fff);
+  border: 2px map-get($map: $colores, $key: color6);
+  border-style: solid none;
+  padding: 0.1em;
+  
 
   @media screen and (max-width: 900px) {
-    display: flex;
+    display: block;
     justify-content: center;
     padding: 0.5em;
     text-align: center;
+    background-color: map-get($map: $colores, $key: color2);
+    border-radius: 5px;
   }
 }
 
 h3 {
+  color: map-get($map: $colores, $key: color6);
+  font-family: 'Mulish', sans-serif;
+  text-align: center;
+  display: inline-block;
+  font-size: nth($size, 6);
+
+  @media screen and (max-width: 900px) {
+    display: block;
+    justify-content: center;
+    padding: 0.5em;
+    text-align: center;
+    background-color: map-get($map: $colores, $key: color2);
+    border-radius: 5px;
+  }
+}
+
+h4 {
   background-color: map-get($map: $colores, $key: color3);
   text-align: center;
   display: inline-block;
