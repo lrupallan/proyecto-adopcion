@@ -18,7 +18,7 @@ header {
       justify-content: flex-end;
       align-items: flex-start;
       margin: 0;
-      width: 70%;
+      width: 90%;
       .link-menu {
         padding: 1.5rem;
         text-align: center;
@@ -32,6 +32,7 @@ header {
             color: map-get($map: $colores, $key: color6);
             @media screen and (max-width: 900px) {
               transition: all 0.2s linear;
+              transform: none;
             }
         }
         
@@ -44,6 +45,7 @@ header {
 
         @media screen and (max-width: 900px) {
           width: 90%;
+          padding: 1em;
           margin: 0;
           border: none;
         }

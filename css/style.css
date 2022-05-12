@@ -45,7 +45,6 @@ h2 {
   h2 {
     display: block;
     justify-content: center;
-    width: 95%;
     padding: 0.3em;
     text-align: center;
     background-color: #ee9835;
@@ -98,7 +97,7 @@ header nav ul {
   justify-content: flex-end;
   align-items: flex-start;
   margin: 0;
-  width: 70%;
+  width: 90%;
 }
 header nav ul .link-menu {
   padding: 1.5rem;
@@ -115,6 +114,7 @@ header nav ul .link-menu:hover {
 @media screen and (max-width: 900px) {
   header nav ul .link-menu:hover {
     transition: all 0.2s linear;
+    transform: none;
   }
 }
 header nav ul .link-menu a {
@@ -125,6 +125,7 @@ header nav ul .link-menu a {
 @media screen and (max-width: 900px) {
   header nav ul .link-menu {
     width: 90%;
+    padding: 1em;
     margin: 0;
     border: none;
   }
@@ -181,7 +182,7 @@ header nav ul .link-menu a {
 @media screen and (max-width: 900px) {
   .box-tenencia-responsable .box1 {
     width: 90%;
-    margin: 1.5em;
+    margin: 1em;
   }
 }
 .box-tenencia-responsable ul li {
@@ -230,12 +231,13 @@ section #container-perro-gato #perro-gato {
 }
 section #container-perro-gato #perro-gato .display-animal {
   height: 20%;
-  padding: 2em;
+  padding: 1.5em;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 section #container-perro-gato #perro-gato .display-animal .boton-animal {
   width: 220px;
   height: 100px;
+  margin-top: 0.5em;
   background-color: #3aa382;
   font-family: "Mulish", sans-serif;
   border-radius: 8px;
@@ -271,6 +273,7 @@ section .viejitos .vieji-seccion .display-animal {
 section .viejitos .vieji-seccion .display-animal .boton-animal {
   width: 220px;
   height: 100px;
+  margin-top: 0.5em;
   background-color: #f67723;
   font-family: "Mulish", sans-serif;
   border-radius: 8px;
@@ -442,6 +445,7 @@ footer ul li a {
 @media screen and (max-width: 900px) {
   .donar-contenido .box2 {
     width: 95%;
+    margin: 0;
   }
 }
 .donar-contenido .donaciones-mp {
