@@ -32,7 +32,6 @@ header {
             color: map-get($map: $colores, $key: color6);
             @media screen and (max-width: 900px) {
               transition: all 0.2s linear;
-              transform: scale(1.3);
             }
         }
         
