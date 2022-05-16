@@ -1,7 +1,7 @@
 @import '../base/mapas';
 
 body {
-  background-image: url('../../multimedia/images/fondo.jpg');
+  background-image: url('../../multimedia/images/fondo1.jpg');
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -38,10 +38,15 @@ body {
       padding: 1em;
       margin-right: 3em;
 
+
       .carousel-caption {
         @media screen and (max-width: 767px) {
           display: none;
         }
+      }
+
+      @media screen and (max-width: 767px) {
+        justify-content: center;
       }
       
     }
