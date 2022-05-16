@@ -17,8 +17,11 @@ header {
       flex-direction: row;
       justify-content: flex-end;
       align-items: flex-start;
+      position: fixed;
+      top: 0;
+      right: 0;
       margin: 0;
-      width: 90%;
+      width: 70%;
       .link-menu {
         padding: 1.5rem;
         text-align: center;
@@ -56,6 +59,7 @@ header {
         flex-direction: column;
         width: 90%;
         margin: 0;
+        position: relative;
 
       }
     }

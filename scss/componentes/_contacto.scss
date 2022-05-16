@@ -26,6 +26,22 @@ main {
 
   .contacto-admin {
     margin-bottom: 3em;
+
+    .box2 {
+      border-radius: 4px;
+      background-color: map-get($map: $colores, $key: color1);
+      margin-left: 1.5em;
+      background-size: contain;
+      width: 40%;
+      font-size: nth($size, 5);
+      padding: 0.5em;
+  
+      @media screen and (max-width: 900px) {
+        width: 90%;
+        text-align: center;
+      }
+    }
+
     .contacto {
       font-size: nth($size, 3);
       line-height: 1.8em;

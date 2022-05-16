@@ -26,7 +26,7 @@ h1 {
     background-color: #3aa382;
     padding: 8px;
     border-radius: 5px;
-    margin-left: 0.5em;
+    margin: 0.5em;
     width: 95%;
   }
 }
@@ -47,6 +47,7 @@ h2 {
     justify-content: center;
     padding: 0.3em;
     text-align: center;
+    font-weight: lighter;
     background-color: #ee9835;
     border-radius: 5px;
   }
@@ -96,8 +97,11 @@ header nav ul {
   flex-direction: row;
   justify-content: flex-end;
   align-items: flex-start;
+  position: fixed;
+  top: 0;
+  right: 0;
   margin: 0;
-  width: 90%;
+  width: 70%;
 }
 header nav ul .link-menu {
   padding: 1.5rem;
@@ -136,6 +140,7 @@ header nav ul .link-menu a {
     flex-direction: column;
     width: 90%;
     margin: 0;
+    position: relative;
   }
 }
 @media screen and (max-width: 900px) {
@@ -154,7 +159,7 @@ header nav ul .link-menu a {
 .box-tenencia-responsable .box2 {
   border-radius: 4px;
   background-color: #3aa382;
-  margin-left: 20px;
+  margin-left: 1.5em;
   background-size: contain;
   width: 30%;
   font-size: 1.5em;
@@ -163,6 +168,7 @@ header nav ul .link-menu a {
 @media screen and (max-width: 900px) {
   .box-tenencia-responsable .box2 {
     width: 90%;
+    text-align: center;
   }
 }
 .box-tenencia-responsable .box1 {
@@ -171,17 +177,16 @@ header nav ul .link-menu a {
   background-color: #e9d5d2;
   font-size: 1.3em;
   font-weight: lighter;
-  opacity: 1;
   line-height: 1.7em;
-  margin-left: 2em;
-  padding-right: 1em;
+  margin-left: 1.5em;
   padding: 0em 1em 0.5em 0.5em;
   margin-bottom: 3em;
   margin-top: 0;
 }
 @media screen and (max-width: 900px) {
   .box-tenencia-responsable .box1 {
-    width: 90%;
+    width: 95%;
+    justify-content: center;
     margin: 1em;
   }
 }
@@ -299,7 +304,7 @@ footer #links-interes {
   color: black;
   font-size: 2.5em;
   border-radius: 5px;
-  padding: 2px 4px 2px 4px;
+  padding: 2px 4px;
 }
 footer ul li {
   list-style: square;
@@ -449,14 +454,14 @@ footer ul li a {
   }
 }
 .donar-contenido .donaciones-mp {
-  border-bottom: 3em;
-  padding-top: 2em;
+  border-top: 2em;
   font-size: 1.1em;
 }
 .donar-contenido .donaciones-mp .linksmp {
   margin-top: 2em;
   list-style-type: square;
   font-size: 1.1em;
+  padding-bottom: 3em;
 }
 .donar-contenido .donaciones-mp .linksmp li {
   line-height: 1.5em;
@@ -474,6 +479,13 @@ footer ul li a {
 .donar-contenido .donaciones .veterinaria {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+}
+@media screen and (max-width: 900px) {
+  .donar-contenido .donaciones {
+    margin: 0.5em;
+    margin-bottom: 1.5em;
+  }
 }
 
 body {
@@ -573,6 +585,21 @@ main .contacto-imagen img {
 main .contacto-admin {
   margin-bottom: 3em;
 }
+main .contacto-admin .box2 {
+  border-radius: 4px;
+  background-color: #3aa382;
+  margin-left: 1.5em;
+  background-size: contain;
+  width: 40%;
+  font-size: 1.5em;
+  padding: 0.5em;
+}
+@media screen and (max-width: 900px) {
+  main .contacto-admin .box2 {
+    width: 90%;
+    text-align: center;
+  }
+}
 main .contacto-admin .contacto {
   font-size: 1.2em;
   line-height: 1.8em;
@@ -621,6 +648,11 @@ body .res-main .resc-container {
 @media screen and (max-width: 767px) {
   body .res-main .resc-container .carousel-caption {
     display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  body .res-main .resc-container {
+    justify-content: center;
   }
 }
 @media screen and (max-width: 900px) {
