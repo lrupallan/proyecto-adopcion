@@ -48,7 +48,7 @@ h2 {
     padding: 0.3em;
     text-align: center;
     font-weight: lighter;
-    background-color: #f79424;
+    background-color: #ee9835;
     border-radius: 5px;
   }
 }
@@ -66,7 +66,7 @@ h3 {
     justify-content: center;
     padding: 0.5em;
     text-align: center;
-    background-color: #f79424;
+    background-color: #ee9835;
     border-radius: 5px;
   }
 }
@@ -322,7 +322,7 @@ footer ul li a {
   line-height: 2;
 }
 .transito .transito-header {
-  background-color: #f79424;
+  background-color: #ee9835;
   padding: 0.3em;
   border-radius: 5px;
   margin-left: 1em;
@@ -555,37 +555,52 @@ body main .descripcion-carousel-mobile {
 @media screen and (max-width: 767px) {
   body main .descripcion-carousel-mobile {
     display: block;
-    background-color: #f79424;
+    background-color: #ee9835;
     margin: 0.7em;
     margin-left: 2.5em;
   }
 }
 
 main .contacto-resc {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  justify-content: space-around;
-  align-items: center;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: 1fr;
+  gap: 3em;
+  margin-bottom: 4em;
 }
 main .contacto-resc .contacto {
   font-size: 1.2em;
   line-height: 1.8em;
-  justify-content: flex-start;
-  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 900px) {
+  main .contacto-resc {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, auto);
+  }
+}
+main .contacto-imagen {
+  margin-top: 3em;
 }
 main .contacto-imagen img {
   display: flex;
   justify-content: center;
-  align-items: center;
-  width: 95%;
+  align-items: flex-end;
+  width: 80%;
   border-radius: 4px;
 }
-main .contacto-admin {
+@media screen and (max-width: 900px) {
+  main .contacto-imagen img {
+    margin: auto;
+  }
+}
+main .contacto-imagen .contacto-admin {
   margin-bottom: 3em;
 }
-main .contacto-admin .box2 {
+main .contacto-imagen .contacto-admin .box2 {
   border-radius: 4px;
   background-color: #3aa382;
   margin-left: 1.5em;
@@ -595,12 +610,12 @@ main .contacto-admin .box2 {
   padding: 0.5em;
 }
 @media screen and (max-width: 900px) {
-  main .contacto-admin .box2 {
+  main .contacto-imagen .contacto-admin .box2 {
     width: 90%;
     text-align: center;
   }
 }
-main .contacto-admin .contacto {
+main .contacto-imagen .contacto-admin .contacto {
   font-size: 1.2em;
   line-height: 1.8em;
   margin-left: 1em;
@@ -668,7 +683,7 @@ body .res-main .descripcion-indivivual {
 @media screen and (max-width: 767px) {
   body .res-main .descripcion-indivivual {
     display: block;
-    background-color: #f79424;
+    background-color: #ee9835;
     margin: 0.7em;
   }
 }

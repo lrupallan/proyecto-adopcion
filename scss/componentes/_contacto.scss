@@ -1,28 +1,40 @@
 main {
   .contacto-resc {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    justify-content: space-around;
-    align-items: center;
+   display: grid;
+   grid-template-columns: auto auto;
+   grid-template-rows: 1fr;
+   gap: 3em;
+   margin-bottom: 4em;
+
+
     .contacto {
       font-size: nth($size, 3);
       line-height: 1.8em;
-      justify-content: flex-start;
-      align-items: flex-start;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    @media screen and (max-width: 900px) {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(2, auto);
     }
   }
   .contacto-imagen {
+   margin-top: 3em;
+
     img {
       display: flex;
       justify-content: center;
-      align-items: center;
-      width: 95%;
-      
+      align-items: flex-end;
+      width: 80%;
       border-radius: 4px;
+
+      @media screen and (max-width: 900px) {
+       margin: auto;
+      }
     }
-  }
 
   .contacto-admin {
     margin-bottom: 3em;
@@ -48,6 +60,7 @@ main {
       margin-left: 1em;
       justify-content: flex-start;
       align-items: flex-start;
+      }
     }
   }
 }
