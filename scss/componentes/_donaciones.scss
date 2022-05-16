@@ -45,17 +45,19 @@
 
     @media screen and (max-width: 900px) {
       width: 95%;
+      margin: 0;
     }
     
   }
   .donaciones-mp {
-    border-bottom: 3em;
-    padding-top: 2em;
+    
+    border-top: 2em;
     font-size: nth($size, 2);
     .linksmp {
       margin-top: 2em;
       list-style-type: square;
       font-size: nth($size, 2);
+      padding-bottom: 3em;
       li {
         line-height: 1.5em;
         a {
@@ -75,6 +77,12 @@
     .veterinaria {
       display: flex;
       flex-direction: column;
+      justify-content: center;
+    }
+
+    @media screen and (max-width: 900px) {
+      margin: 0.5em;
+      margin-bottom: 1.5em;
     }
   }
 }
