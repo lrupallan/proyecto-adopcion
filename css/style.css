@@ -178,7 +178,7 @@ header nav ul .link-menu a {
   font-size: 1.3em;
   font-weight: lighter;
   line-height: 1.7em;
-  margin-left: 1.5em;
+  margin: auto;
   padding: 0em 1em 0.5em 0.5em;
   margin-bottom: 3em;
   margin-top: 0;
@@ -659,6 +659,9 @@ body .res-main .resc-container {
   justify-content: space-around;
   padding: 1em;
   margin-right: 3em;
+}
+body .res-main .resc-container .carousel {
+  margin: auto;
 }
 @media screen and (max-width: 767px) {
   body .res-main .resc-container .carousel-caption {
