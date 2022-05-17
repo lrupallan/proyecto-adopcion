@@ -57,10 +57,13 @@ h2 {
 
 h3 {
   color: map-get($map: $colores, $key: color6);
-  font-family: 'Mulish', sans-serif;
-  text-align: center;
+  font-family: 'bebas neue', cursive;
   display: inline-block;
-  font-size: nth($size, 6);
+  font-size: nth($size, 8);
+  font-weight: lighter;
+  padding: 0.2em;
+  margin-bottom: 1em;
+  text-align: center;
 
   @media screen and (max-width: 900px) {
     display: block;

@@ -55,10 +55,13 @@ h2 {
 
 h3 {
   color: black;
-  font-family: "Mulish", sans-serif;
-  text-align: center;
+  font-family: "bebas neue", cursive;
   display: inline-block;
-  font-size: 1.7em;
+  font-size: 2.5em;
+  font-weight: lighter;
+  padding: 0.2em;
+  margin-bottom: 1em;
+  text-align: center;
 }
 @media screen and (max-width: 900px) {
   h3 {
@@ -586,10 +589,10 @@ main .contacto-resc .contacto {
     grid-template-rows: repeat(2, auto);
   }
 }
-main .contacto-imagen {
+main .contacto-resc .contacto-imagen {
   margin-top: 3em;
 }
-main .contacto-imagen img {
+main .contacto-resc .contacto-imagen img {
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -597,29 +600,30 @@ main .contacto-imagen img {
   border-radius: 4px;
 }
 @media screen and (max-width: 900px) {
-  main .contacto-imagen img {
+  main .contacto-resc .contacto-imagen img {
     margin: auto;
   }
 }
-main .contacto-imagen .contacto-admin {
+main .contacto-admin {
   margin-bottom: 3em;
 }
-main .contacto-imagen .contacto-admin #box2 {
+main .contacto-admin .box2 {
   border-radius: 4px;
   background-color: #3aa382;
-  margin-left: 1.5em;
+  margin-left: 1em;
   background-size: contain;
-  width: 50%;
+  width: 45%;
   font-size: 1.5em;
   padding: 0.5em;
 }
 @media screen and (max-width: 900px) {
-  main .contacto-imagen .contacto-admin #box2 {
+  main .contacto-admin .box2 {
     width: 90%;
     text-align: center;
+    margin: auto;
   }
 }
-main .contacto-imagen .contacto-admin .contacto {
+main .contacto-admin .contacto {
   font-size: 1.2em;
   line-height: 1.8em;
   margin-left: 1em;
