@@ -48,6 +48,8 @@ h2 {
     padding: 0.3em;
     text-align: center;
     font-weight: lighter;
+    font-family: "mulish", sans-serif;
+    font-size: 2em;
     background-color: #ee9835;
     border-radius: 5px;
   }
@@ -67,6 +69,8 @@ h3 {
   h3 {
     display: block;
     justify-content: center;
+    font-family: "Mulish", sans-serif;
+    font-size: 1.5em;
     padding: 0.5em;
     text-align: center;
     background-color: #ee9835;
@@ -143,7 +147,7 @@ header nav ul .link-menu a {
     padding: 1em;
     margin: 0;
     border: none;
-    background-color: white;
+    background-color: transparent;
   }
 }
 @media screen and (max-width: 900px) {
@@ -201,6 +205,7 @@ header nav ul .link-menu a {
     width: 95%;
     justify-content: center;
     margin: auto;
+    margin-bottom: 2em;
   }
 }
 .box-tenencia-responsable ul li {
@@ -463,7 +468,7 @@ footer ul li a {
 @media screen and (max-width: 900px) {
   .donar-contenido .box2 {
     width: 95%;
-    margin: 0;
+    margin: auto;
   }
 }
 .donar-contenido .donaciones-mp {
@@ -564,13 +569,14 @@ body main .presentacion #carouselExampleDark {
 }
 body main .descripcion-carousel-mobile {
   display: none;
+  width: 100%;
 }
 @media screen and (max-width: 767px) {
   body main .descripcion-carousel-mobile {
     display: block;
     background-color: #ee9835;
     margin: 0.7em;
-    margin-left: 2.5em;
+    margin-left: 1.5em;
   }
 }
 
@@ -679,7 +685,8 @@ body .res-main .resc-container .carousel {
 }
 @media screen and (max-width: 767px) {
   body .res-main .resc-container .carousel {
-    margin-left: 4em;
+    margin-left: 0.2em;
+    justify-content: center;
   }
 }
 @media screen and (max-width: 767px) {

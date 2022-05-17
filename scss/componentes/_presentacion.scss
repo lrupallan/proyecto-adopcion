@@ -70,12 +70,14 @@ body {
     }
     .descripcion-carousel-mobile {
       display: none;
+      width: 100%;
 
       @media screen and (max-width: 767px) {
         display: block;
         background-color: map-get($map: $colores, $key: color2);
         margin: 0.7em;
-        margin-left: 2.5em;
+        margin-left: 1.5em;
+        
       }
     }
   }

@@ -50,6 +50,8 @@ h2 {
     padding: 0.3em;
     text-align: center;
     font-weight: lighter;
+    font-family: 'mulish', sans-serif;
+    font-size: nth($list: $size, $n: 7);
     background-color: map-get($map: $colores, $key: color2);
     border-radius: 5px;
   }
@@ -68,6 +70,8 @@ h3 {
   @media screen and (max-width: 900px) {
     display: block;
     justify-content: center;
+    font-family: 'Mulish', sans-serif;
+    font-size: nth($list: $size, $n: 5);
     padding: 0.5em;
     text-align: center;
     background-color: map-get($map: $colores, $key: color2);

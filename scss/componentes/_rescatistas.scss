@@ -36,9 +36,15 @@ body {
       display: flex;
       justify-content: space-around;
       padding: 1em;
-      margin-right: 3em;
+      margin: 2em;
       .carousel {
-        margin: auto;
+        margin: 3em;
+        
+
+        @media screen and (max-width: 767px) {
+          margin-left: 0.2em;
+          justify-content: center;
+        }
       }
 
 
