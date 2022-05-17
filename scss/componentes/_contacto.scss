@@ -39,12 +39,12 @@ main {
   .contacto-admin {
     margin-bottom: 3em;
 
-    .box2 {
+    #box2 {
       border-radius: 4px;
       background-color: map-get($map: $colores, $key: color1);
       margin-left: 1.5em;
       background-size: contain;
-      width: 40%;
+      width: 50%;
       font-size: nth($size, 5);
       padding: 0.5em;
   
