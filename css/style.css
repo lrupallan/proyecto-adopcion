@@ -133,11 +133,17 @@ header nav ul .link-menu a {
   color: white;
 }
 @media screen and (max-width: 900px) {
+  header nav ul .link-menu a {
+    color: black;
+  }
+}
+@media screen and (max-width: 900px) {
   header nav ul .link-menu {
     width: 90%;
     padding: 1em;
     margin: 0;
     border: none;
+    background-color: white;
   }
 }
 @media screen and (max-width: 900px) {
@@ -666,10 +672,15 @@ body .res-main .resc-container {
   display: flex;
   justify-content: space-around;
   padding: 1em;
-  margin-right: 3em;
+  margin: 2em;
 }
 body .res-main .resc-container .carousel {
-  margin: auto;
+  margin: 3em;
+}
+@media screen and (max-width: 767px) {
+  body .res-main .resc-container .carousel {
+    margin-left: 4em;
+  }
 }
 @media screen and (max-width: 767px) {
   body .res-main .resc-container .carousel-caption {

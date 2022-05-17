@@ -46,7 +46,11 @@ header {
         a {
           text-decoration: none;
           font-size: nth($list: $size, $n: 4);
-          color: map-get($map: $colores, $key: color7);     
+          color: map-get($map: $colores, $key: color7);   
+          @media screen and (max-width: 900px) {
+            color: map-get($map: $colores, $key: color6);
+           
+          }  
         }
 
         @media screen and (max-width: 900px) {
@@ -54,6 +58,8 @@ header {
           padding: 1em;
           margin: 0;
           border: none;
+          background-color: map-get($map: $colores, $key: color7);
+          
         }
       }
 
@@ -63,6 +69,7 @@ header {
         width: 90%;
         margin: 0;
         position: relative;
+       
 
       }
     }
