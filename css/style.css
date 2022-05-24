@@ -105,6 +105,7 @@ header nav ul {
   justify-content: flex-end;
   align-items: flex-start;
   position: fixed;
+  z-index: 99;
   top: 0;
   right: 0;
   margin: 0;
@@ -718,6 +719,16 @@ body .res-main .descripcion-indivivual {
   body {
     margin: 0;
   }
+}
+
+.error {
+  display: flex;
+  justify-content: center;
+}
+.error img {
+  display: flex;
+  justify-content: center;
+  width: 90%;
 }
 
 /*# sourceMappingURL=style.css.map */
