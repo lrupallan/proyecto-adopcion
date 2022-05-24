@@ -4,7 +4,7 @@
 .transito {
   background-color: map-get($map: $colores, $key: color7);
   font-size: 18px;
-  line-height: 2;
+  line-height: 2em;
   @extend %flexbox;
 
   .transito-header {

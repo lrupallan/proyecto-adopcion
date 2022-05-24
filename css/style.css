@@ -337,7 +337,7 @@ footer ul li a {
 .transito {
   background-color: white;
   font-size: 18px;
-  line-height: 2;
+  line-height: 2em;
 }
 .transito .transito-header {
   background-color: #ee9835;
@@ -677,8 +677,6 @@ body .res-main .rescatista-presentacion .texto-resc a {
 body .res-main .resc-container {
   display: flex;
   justify-content: space-around;
-  padding: 1em;
-  margin: 2em;
 }
 body .res-main .resc-container .carousel {
   margin: 3em;
