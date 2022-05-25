@@ -87,19 +87,23 @@ h4 {
   border-radius: 4px;
 }
 
-header nav {
+header .nav {
   display: flex;
   justify-content: space-between;
 }
-header nav div .logo {
-  display: inline;
+header .nav div .logo {
+  display: flex;
   justify-content: flex-start;
   top: 0px;
   left: 0px;
   margin-bottom: 2em;
-  padding: 0.5em;
 }
-header nav ul {
+@media screen and (max-width: 700px) {
+  header .nav div {
+    width: 20%;
+  }
+}
+header .nav-menu {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -111,7 +115,7 @@ header nav ul {
   margin: 0;
   width: 70%;
 }
-header nav ul .link-menu {
+header .nav-menu .link-menu {
   padding: 0.7em;
   text-align: center;
   list-style: none;
@@ -120,56 +124,73 @@ header nav ul .link-menu {
   background-color: black;
   opacity: 0.85;
 }
-header nav ul .link-menu:hover {
+header .nav-menu .link-menu:hover {
   text-decoration: underline overline 1px solid black;
   transition: all 0.2s linear;
   transform: translateY(5px);
   color: black;
 }
 @media screen and (max-width: 900px) {
-  header nav ul .link-menu:hover {
+  header .nav-menu .link-menu:hover {
     transition: all 0.2s linear;
     transform: none;
   }
 }
-header nav ul .link-menu a {
+header .nav-menu .link-menu a {
   text-decoration: none;
   font-size: 1.3em;
   color: white;
 }
-@media screen and (max-width: 900px) {
-  header nav ul .link-menu a {
+@media screen and (max-width: 700px) {
+  header .nav-menu .link-menu a {
     color: black;
   }
 }
-@media screen and (max-width: 900px) {
-  header nav ul .link-menu {
-    width: 90%;
-    padding: 1em;
-    margin: 0;
-    border: none;
-    background-color: transparent;
+@media screen and (max-width: 700px) {
+  header .nav-menu .link-menu {
+    background-color: white;
   }
 }
-@media screen and (max-width: 900px) {
-  header nav ul {
+@media screen and (max-width: 700px) {
+  header .nav-menu {
+    position: fixed;
+    top: 180px;
+    bottom: 0;
+    background-color: #fff;
+    width: 100%;
+    left: 0;
     display: flex;
+    justify-content: space-evenly;
     flex-direction: column;
-    width: 90%;
-    margin: 0;
-    position: relative;
+    align-items: center;
+    clip-path: circle(0 at center);
+    transition: clip-path 0.7s ease-in-out;
   }
 }
-@media screen and (max-width: 900px) {
-  header nav {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
+header .nav-input:checked + .nav-menu {
+  clip-path: circle(100% at center);
+}
+header .nav-label {
+  display: none;
+}
+header .nav-label img {
+  position: relative;
+  top: 100px;
+  left: 100px;
+}
+@media (max-width: 700px) {
+  header .nav-label {
+    display: block;
+    cursor: pointer;
   }
 }
-@media screen and (max-width: 900px) {
+header .nav-input {
+  display: none;
+}
+@media screen and (max-width: 700px) {
   header {
-    margin-bottom: 5em;
+    display: flex;
+    justify-content: space-evenly;
   }
 }
 
@@ -724,11 +745,12 @@ body .res-main .descripcion-indivivual {
 .error {
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 .error img {
   display: flex;
   justify-content: center;
-  width: 90%;
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
