@@ -105,7 +105,6 @@ header nav ul {
   justify-content: flex-end;
   align-items: flex-start;
   position: fixed;
-  z-index: 99;
   top: 0;
   right: 0;
   margin: 0;
@@ -187,6 +186,12 @@ header nav ul .link-menu a {
     width: 90%;
     text-align: center;
     margin: auto;
+  }
+}
+@media screen and (max-width: 1552px) {
+  .box-tenencia-responsable .box2 {
+    width: 80%;
+    text-align: center;
   }
 }
 .box-tenencia-responsable .box1 {

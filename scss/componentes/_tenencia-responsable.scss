@@ -16,6 +16,11 @@
       text-align: center;
       margin: auto;
     }
+
+    @media screen and (max-width: 1552px) {
+      width: 80%;
+      text-align: center;
+    }
   }
   .box1 {
       width: 80%;
