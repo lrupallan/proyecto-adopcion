@@ -116,8 +116,10 @@ header .nav-menu {
   width: 70%;
 }
 header .nav-menu .link-menu {
+  display: inline-flex;
+  flex-direction: row;
   padding: 0.7em;
-  text-align: center;
+  justify-content: center;
   list-style: none;
   width: 80%;
   border-left: 1px solid white;
@@ -172,11 +174,12 @@ header .nav-input:checked + .nav-menu {
 }
 header .nav-label {
   display: none;
+  position: fixed;
 }
 header .nav-label img {
   position: relative;
   top: 100px;
-  left: 100px;
+  left: 300px;
 }
 @media (max-width: 700px) {
   header .nav-label {
@@ -537,6 +540,11 @@ footer ul li a {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+@media screen and (max-width: 900px) {
+  .donar-contenido .donaciones .veterinaria iframe {
+    width: 90%;
+  }
 }
 @media screen and (max-width: 900px) {
   .donar-contenido .donaciones {
