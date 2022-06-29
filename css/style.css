@@ -91,113 +91,6 @@ a {
   color: #116046;
 }
 
-header .nav {
-  display: flex;
-  justify-content: space-between;
-}
-header .nav div .logo {
-  display: flex;
-  justify-content: flex-start;
-  top: 0px;
-  left: 0px;
-  margin-bottom: 2em;
-}
-@media screen and (max-width: 700px) {
-  header .nav div {
-    width: 20%;
-  }
-}
-header .nav-menu {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: flex-start;
-  position: fixed;
-  z-index: 99;
-  top: 0;
-  right: 0;
-  margin: 0;
-  width: 70%;
-}
-header .nav-menu .link-menu {
-  padding: 0.7em;
-  text-align: center;
-  list-style: none;
-  width: 80%;
-  border-left: 1px solid white;
-  background-color: black;
-  opacity: 0.85;
-}
-header .nav-menu .link-menu:hover {
-  text-decoration: underline overline 1px solid black;
-  transition: all 0.2s linear;
-  transform: translateY(5px);
-  color: black;
-}
-@media screen and (max-width: 900px) {
-  header .nav-menu .link-menu:hover {
-    transition: all 0.2s linear;
-    transform: none;
-  }
-}
-header .nav-menu .link-menu a {
-  text-decoration: none;
-  font-size: 1.3em;
-  color: white;
-}
-@media screen and (max-width: 700px) {
-  header .nav-menu .link-menu a {
-    color: black;
-  }
-}
-@media screen and (max-width: 700px) {
-  header .nav-menu .link-menu {
-    background-color: white;
-  }
-}
-@media screen and (max-width: 700px) {
-  header .nav-menu {
-    position: fixed;
-    top: 180px;
-    bottom: 0;
-    background-color: #fff;
-    width: 100%;
-    left: 0;
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-    align-items: center;
-    clip-path: circle(0 at center);
-    transition: clip-path 0.7s ease-in-out;
-  }
-}
-header .nav-input:checked + .nav-menu {
-  clip-path: circle(100% at center);
-}
-header .nav-label {
-  display: none;
-}
-header .nav-label img {
-  position: relative;
-  top: 100px;
-  left: 100px;
-}
-@media (max-width: 700px) {
-  header .nav-label {
-    display: block;
-    cursor: pointer;
-  }
-}
-header .nav-input {
-  display: none;
-}
-@media screen and (max-width: 700px) {
-  header {
-    display: flex;
-    justify-content: flex-start;
-  }
-}
-
 .box-tenencia-responsable .box2 {
   border-radius: 4px;
   background-color: #3aa382;
@@ -406,6 +299,7 @@ footer ul li a {
 .transito .transito-contenido .transito-imagen {
   width: 35%;
   padding: 1em;
+  border-radius: 20px;
 }
 @media screen and (max-width: 900px) {
   .transito .transito-contenido .transito-imagen {
