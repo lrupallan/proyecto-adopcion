@@ -1,13 +1,13 @@
 @import '../base/mapas';
 
 body {
-  background-image: url('../../multimedia/images/fondo1.png');
+  background-image: url('../../multimedia/images/Wave.svg');
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
   
   .res-main {
-    font-size: nth($list: $size, $n: 3);
+    font-size: nth($list: $size, $n: 2);
 
     h5 {
       font-family: 'Bebas Neue', cursive;
@@ -40,15 +40,7 @@ body {
       display: flex;
       justify-content: center;
       margin: 2em 0em;
-    }
-
-    .descripcion-indivivual {
-      display: flex;
-      flex-direction: column;
-      grid-area: carousel texto descripcion descripcion;
-      font-size: nth($size, 3);
-      margin: 1em;
-    
+      font-size: nth($size, 2);
     }
   }
 

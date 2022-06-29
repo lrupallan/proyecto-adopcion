@@ -2,16 +2,17 @@
 @import '../base/listas';
 
 body {
-  background-image: url('../../multimedia/images/fondo1.png');
+  background-image: url('../../multimedia/images/Wave.svg');
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
   main {
+    font-size: nth($list: $size, $n: 2);
     .banner-container {
       display: flex;
       justify-content: center;
       .banner {
-        width: 80%;
+        width: 75%;
         display: flex;
         justify-content: center;
         margin-bottom: 5em;
@@ -22,60 +23,17 @@ body {
         }
       }
     }
-    .presentacion {
-      margin-top: 2em;
-      margin-right: 3em;
-      display: grid;
-      grid-template-columns: auto auto;
-      grid-template-rows: 1fr;
-      gap: 3em;
-      grid-template-areas: 
-                    "texto carrusel";
-      .inicio {
-        font-size: nth($size, 3);
-        margin-left: 1em;
-        text-align: justify;
-        grid-area: texto;
-  
-        .texto-inicial {
-          display: inline;
-          
-          text-align: center;
-          padding-bottom: 3em;
+    
 
-          a {
-            color: map-get($map: $colores, $key: color5);
-          }
-        }  
-      }
-  
-      #carouselExampleDark {
-        grid-area: carrusel;
 
-        @media screen and (max-width: 767px) {
-          margin-left: 1.5em;
-        }
-      }
-  
-      @media screen and (max-width: 1100px) {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, auto);
-        grid-template-areas: 
-                        "carrusel"
-                        "descripcion-carousel-mobile"
-                        "texto";
-      }
-      
-
-    }
     .descripcion-carousel-mobile {
       display: none;
       width: 100%;
 
       @media screen and (max-width: 767px) {
         display: block;
-        margin: 0.7em;
-        margin-left: 1.5em;
+        margin: auto;
+       
         
       }
     }
