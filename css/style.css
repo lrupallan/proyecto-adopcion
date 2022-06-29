@@ -718,6 +718,18 @@ body .res-main .descripcion-individual {
   justify-content: center;
   margin: 2em 0em;
 }
+body .res-main .descripcion-indivivual {
+  display: flex;
+  flex-direction: column;
+  grid-area: carousel texto descripcion descripcion;
+  font-size: 1.2em;
+  margin: 1em;
+}
+@media screen and (max-width: 900px) {
+  body {
+    margin: 0;
+  }
+}
 
 .error {
   display: flex;

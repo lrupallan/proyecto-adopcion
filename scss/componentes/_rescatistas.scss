@@ -41,5 +41,18 @@ body {
       justify-content: center;
       margin: 2em 0em;
     }
+
+    .descripcion-indivivual {
+      display: flex;
+      flex-direction: column;
+      grid-area: carousel texto descripcion descripcion;
+      font-size: nth($size, 3);
+      margin: 1em;
+    
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    margin: 0;
   }
 }
