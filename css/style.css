@@ -378,7 +378,7 @@ footer ul li a {
 }
 
 .transito {
-  background-color: white;
+  background-color: transparent;
   font-size: 18px;
   line-height: 2em;
 }
@@ -404,7 +404,7 @@ footer ul li a {
   width: 70%;
 }
 .transito .transito-contenido .transito-imagen {
-  width: 30%;
+  width: 35%;
   padding: 1em;
 }
 @media screen and (max-width: 900px) {
@@ -413,7 +413,7 @@ footer ul li a {
   }
 }
 .transito .transito-contenido .formulario-transito {
-  width: 30%;
+  width: 35%;
   padding: 1em;
 }
 .transito .transito-contenido .formulario-transito .form-row {

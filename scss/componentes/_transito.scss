@@ -2,7 +2,7 @@
 @import '../base/mapas';
 
 .transito {
-  background-color: map-get($map: $colores, $key: color7);
+  background-color: transparent;
   font-size: 18px;
   line-height: 2em;
   @extend %flexbox;
@@ -27,7 +27,7 @@
     justify-content: center;
     width: 70%;
     .transito-imagen {
-      width: 30%;
+      width: 35%;
       padding: 1em;
 
       @media screen and (max-width: 900px) {
@@ -35,7 +35,7 @@
       }
     }
     .formulario-transito {
-      width: 30%;
+      width: 35%;
       padding: 1em;
       .form-row {
         padding: 0.5em;
