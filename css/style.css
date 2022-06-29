@@ -590,49 +590,40 @@ body main .descripcion-carousel-mobile {
   }
 }
 
+main {
+  font-size: 1.1em;
+}
 main .contacto-resc {
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: 1fr;
-  gap: 3em;
-  margin-bottom: 4em;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 3em 0;
 }
 main .contacto-resc .contacto {
-  font-size: 1.2em;
+  width: max-content;
   line-height: 1.8em;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-@media screen and (max-width: 900px) {
-  main .contacto-resc {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, auto);
-  }
 }
 main .contacto-resc .contacto-imagen {
-  margin-top: 3em;
-  width: 70%;
+  display: flex;
+  justify-content: center;
 }
 main .contacto-resc .contacto-imagen img {
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
   border-radius: 700px;
+  width: 90%;
 }
 @media screen and (max-width: 900px) {
-  main .contacto-resc .contacto-imagen img {
-    width: fit-content;
+  main .contacto-resc {
+    display: flex;
+    flex-direction: column;
   }
 }
 main .contacto-admin {
-  margin-bottom: 3em;
+  margin: 1em 2em;
 }
 main .contacto-admin .box2 {
   border-radius: 4px;
   background-color: #3aa382;
-  margin-left: 1em;
   background-size: contain;
   width: 45%;
   font-size: 1.5em;
@@ -640,17 +631,17 @@ main .contacto-admin .box2 {
 }
 @media screen and (max-width: 900px) {
   main .contacto-admin .box2 {
+    width: fit-content;
+    text-align: center;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 900px) {
+  main .contacto-admin {
     width: 90%;
     text-align: center;
     margin: auto;
   }
-}
-main .contacto-admin .contacto {
-  font-size: 1.1em;
-  line-height: 1.8em;
-  margin-left: 1em;
-  justify-content: flex-start;
-  align-items: flex-start;
 }
 
 body {

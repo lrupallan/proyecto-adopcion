@@ -1,68 +1,56 @@
 main {
-  .contacto-resc {
-   display: grid;
-   grid-template-columns: auto auto;
-   grid-template-rows: 1fr;
-   gap: 3em;
-   margin-bottom: 4em;
+  font-size: nth($list: $size, $n: 2);
 
+  .contacto-resc {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 3em 0;
 
     .contacto {
-      font-size: nth($size, 3);
-      line-height: 1.8em;
+      width: max-content;
+      line-height: 1.8em;  
+    }
+
+    .contacto-imagen {
       display: flex;
-      flex-direction: column;
       justify-content: center;
-      align-items: center;
+
+      img{
+        display: flex;
+        border-radius: 700px;
+        width: 90%;
+      }
+      
     }
 
     @media screen and (max-width: 900px) {
-      grid-template-columns: 1fr;
-      grid-template-rows: repeat(2, auto);
-    }
-    .contacto-imagen {
-      margin-top: 3em;
-   
-      img {
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-        width: 80%;
-        border-radius: 4px;
-   
-         @media screen and (max-width: 900px) {
-          margin: auto;
-         }
-      }   
+      display: flex;
+      flex-direction: column;
     }
   }
-  
-  .contacto-admin {
-    margin-bottom: 3em;
 
+  .contacto-admin{
+    margin: 1em 2em;
     .box2 {
+
       border-radius: 4px;
       background-color: map-get($map: $colores, $key: color1);
-      margin-left: 1em;
       background-size: contain;
       width: 45%;
       font-size: nth($size, 5);
       padding: 0.5em;
-  
+        
       @media screen and (max-width: 900px) {
-        width: 90%;
+        width: fit-content;
         text-align: center;
-        margin: auto;
+        margin: 0;
       }
     }
-    
-
-    .contacto {
-      font-size: nth($size, 3);
-      line-height: 1.8em;
-      margin-left: 1em;
-      justify-content: flex-start;
-      align-items: flex-start;
+    @media screen and (max-width: 900px){
+      width: 90%;
+        text-align: center;
+        margin: auto;
     }
-  }
+  } 
 }
