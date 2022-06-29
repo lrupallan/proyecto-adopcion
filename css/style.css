@@ -87,6 +87,10 @@ h4 {
   border-radius: 4px;
 }
 
+a {
+  color: #116046;
+}
+
 header .nav {
   display: flex;
   justify-content: space-between;
@@ -116,10 +120,8 @@ header .nav-menu {
   width: 70%;
 }
 header .nav-menu .link-menu {
-  display: inline-flex;
-  flex-direction: row;
   padding: 0.7em;
-  justify-content: center;
+  text-align: center;
   list-style: none;
   width: 80%;
   border-left: 1px solid white;
@@ -174,12 +176,11 @@ header .nav-input:checked + .nav-menu {
 }
 header .nav-label {
   display: none;
-  position: fixed;
 }
 header .nav-label img {
   position: relative;
   top: 100px;
-  left: 300px;
+  left: 100px;
 }
 @media (max-width: 700px) {
   header .nav-label {
@@ -592,7 +593,6 @@ body main .presentacion .inicio {
 }
 body main .presentacion .inicio .texto-inicial {
   display: inline;
-  font-size: 1em;
   text-align: center;
   padding-bottom: 3em;
 }
@@ -621,7 +621,6 @@ body main .descripcion-carousel-mobile {
 @media screen and (max-width: 767px) {
   body main .descripcion-carousel-mobile {
     display: block;
-    background-color: #ee9835;
     margin: 0.7em;
     margin-left: 1.5em;
   }
@@ -697,69 +696,27 @@ body {
   background-repeat: no-repeat;
 }
 body .res-main {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-}
-body .res-main .rescatista-presentacion {
-  padding-top: 1.5em;
-  display: flex;
-  justify-content: space-around;
-}
-body .res-main .rescatista-presentacion .texto-resc {
   font-size: 1.2em;
+}
+body .res-main h5 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 1.3em;
+}
+body .res-main .resc-presentacion .texto-resc {
   margin-left: 1em;
   text-align: justify;
-  grid-area: texto texto carousel carousel;
-  margin-top: 3em;
+  grid-area: texto;
 }
-body .res-main .rescatista-presentacion .texto-resc a {
+body .res-main .resc-presentacion .texto-resc p a {
   color: #116046;
 }
-@media screen and (max-width: 900px) {
-  body .res-main .rescatista-presentacion .texto-resc {
-    margin: 1em;
-  }
+body .res-main .resc-presentacion .carousel {
+  grid-area: carousel;
 }
-body .res-main .resc-container {
-  align-items: center;
-  justify-content: center;
-}
-body .res-main .resc-container .carousel {
-  margin: 3em;
-  grid-area: texto carousel carousel descripcion;
-}
-@media (max-width: 767px) {
-  body .res-main .resc-container .carousel {
-    margin-left: 0.2em;
-    align-items: center;
-  }
-}
-@media screen and (max-width: 767px) {
-  body .res-main .resc-container {
-    justify-content: center;
-  }
-}
-@media screen and (max-width: 900px) {
-  body .res-main {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, auto);
-    grid-template-areas: "carrusel" "texto";
-  }
-}
-body .res-main .descripcion-indivivual {
+body .res-main .descripcion-individual {
   display: flex;
-  flex-direction: column;
-  grid-area: carousel texto descripcion descripcion;
-  font-size: 1.2em;
-  margin: 1em;
-}
-@media screen and (max-width: 900px) {
-  body {
-    margin: 0;
-  }
+  justify-content: center;
+  margin: 2em 0em;
 }
 
 .error {
