@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Mulish&display=swap");
 html {
   font-family: "Mulish", sans-serif;
-  background-image: url("../../multimedia/images/fondo1.png");
+  background-image: url("../../multimedia/images/Wave.svg");
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -224,7 +224,7 @@ header .nav-input {
   width: 80%;
   color: black;
   background-color: #e9d5d2;
-  font-size: 1.3em;
+  font-size: 1.2em;
   font-weight: lighter;
   line-height: 1.7em;
   margin-left: 1em;
@@ -258,7 +258,7 @@ header .nav-input {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  font-size: 1.2em;
+  font-size: 1.1em;
   width: 60%;
 }
 @media screen and (max-width: 1100px) {
@@ -478,7 +478,7 @@ footer ul li a {
 }
 .donaciones-intro .texto-donar {
   display: inline;
-  font-size: 1.2em;
+  font-size: 1.1em;
   width: 60%;
 }
 .donaciones-intro .texto-donar a {
@@ -519,7 +519,7 @@ footer ul li a {
   font-size: 1.1em;
 }
 .donar-contenido .donaciones-mp .linksmp {
-  margin-top: 2em;
+  margin: 2em 1em;
   list-style-type: square;
   font-size: 1.1em;
   padding-bottom: 3em;
@@ -555,17 +555,20 @@ footer ul li a {
 }
 
 body {
-  background-image: url("../../multimedia/images/fondo1.png");
+  background-image: url("../../multimedia/images/Wave.svg");
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
+}
+body main {
+  font-size: 1.1em;
 }
 body main .banner-container {
   display: flex;
   justify-content: center;
 }
 body main .banner-container .banner {
-  width: 80%;
+  width: 75%;
   display: flex;
   justify-content: center;
   margin-bottom: 5em;
@@ -576,44 +579,6 @@ body main .banner-container .banner {
     display: none;
   }
 }
-body main .presentacion {
-  margin-top: 2em;
-  margin-right: 3em;
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: 1fr;
-  gap: 3em;
-  grid-template-areas: "texto carrusel";
-}
-body main .presentacion .inicio {
-  font-size: 1.2em;
-  margin-left: 1em;
-  text-align: justify;
-  grid-area: texto;
-}
-body main .presentacion .inicio .texto-inicial {
-  display: inline;
-  text-align: center;
-  padding-bottom: 3em;
-}
-body main .presentacion .inicio .texto-inicial a {
-  color: #116046;
-}
-body main .presentacion #carouselExampleDark {
-  grid-area: carrusel;
-}
-@media screen and (max-width: 767px) {
-  body main .presentacion #carouselExampleDark {
-    margin-left: 1.5em;
-  }
-}
-@media screen and (max-width: 1100px) {
-  body main .presentacion {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, auto);
-    grid-template-areas: "carrusel" "descripcion-carousel-mobile" "texto";
-  }
-}
 body main .descripcion-carousel-mobile {
   display: none;
   width: 100%;
@@ -621,8 +586,7 @@ body main .descripcion-carousel-mobile {
 @media screen and (max-width: 767px) {
   body main .descripcion-carousel-mobile {
     display: block;
-    margin: 0.7em;
-    margin-left: 1.5em;
+    margin: auto;
   }
 }
 
@@ -649,17 +613,17 @@ main .contacto-resc .contacto {
 }
 main .contacto-resc .contacto-imagen {
   margin-top: 3em;
+  width: 70%;
 }
 main .contacto-resc .contacto-imagen img {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: flex-end;
-  width: 80%;
-  border-radius: 4px;
+  border-radius: 700px;
 }
 @media screen and (max-width: 900px) {
   main .contacto-resc .contacto-imagen img {
-    margin: auto;
+    width: fit-content;
   }
 }
 main .contacto-admin {
@@ -682,7 +646,7 @@ main .contacto-admin .box2 {
   }
 }
 main .contacto-admin .contacto {
-  font-size: 1.2em;
+  font-size: 1.1em;
   line-height: 1.8em;
   margin-left: 1em;
   justify-content: flex-start;
@@ -690,13 +654,13 @@ main .contacto-admin .contacto {
 }
 
 body {
-  background-image: url("../../multimedia/images/fondo1.png");
+  background-image: url("../../multimedia/images/Wave.svg");
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
 }
 body .res-main {
-  font-size: 1.2em;
+  font-size: 1.1em;
 }
 body .res-main h5 {
   font-family: "Bebas Neue", cursive;
@@ -717,13 +681,7 @@ body .res-main .descripcion-individual {
   display: flex;
   justify-content: center;
   margin: 2em 0em;
-}
-body .res-main .descripcion-indivivual {
-  display: flex;
-  flex-direction: column;
-  grid-area: carousel texto descripcion descripcion;
-  font-size: 1.2em;
-  margin: 1em;
+  font-size: 1.1em;
 }
 @media screen and (max-width: 900px) {
   body {

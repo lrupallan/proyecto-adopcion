@@ -9,7 +9,7 @@
   padding: 2em;
   .texto-donar {
     display: inline;
-    font-size: nth($size, 3);
+    font-size: nth($size, 2);
     width: 60%;
 
     a {
@@ -54,7 +54,7 @@
     border-top: 2em;
     font-size: nth($size, 2);
     .linksmp {
-      margin-top: 2em;
+      margin: 2em 1em;
       list-style-type: square;
       font-size: nth($size, 2);
       padding-bottom: 3em;
