@@ -87,3 +87,9 @@ h4 {
   font-size: nth($size, 5);
   border-radius: 4px;
 }
+
+a{
+
+  color: map-get($map: $colores, $key: color5);
+  
+}
