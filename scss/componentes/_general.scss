@@ -51,7 +51,7 @@ h2 {
     text-align: center;
     font-weight: lighter;
     font-family: 'mulish', sans-serif;
-    font-size: nth($list: $size, $n: 7);
+    font-size: nth($list: $size, $n: 5);
     background-color: map-get($map: $colores, $key: color2);
     border-radius: 5px;
   }
