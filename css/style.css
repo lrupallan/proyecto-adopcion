@@ -139,6 +139,11 @@ a {
 .box-tenencia-responsable ul li a {
   color: black;
 }
+@media screen and (max-width: 900px) {
+  .box-tenencia-responsable ul li {
+    font-size: 1em;
+  }
+}
 
 .adoptar {
   display: flex;
@@ -182,6 +187,11 @@ section #container-perro-gato #perro-gato .display-animal {
   padding: 1.5em;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+@media screen and (max-width: 900px) {
+  section #container-perro-gato #perro-gato .display-animal img {
+    width: 95%;
+  }
+}
 section #container-perro-gato #perro-gato .display-animal .boton-animal {
   width: 220px;
   height: 100px;
@@ -198,8 +208,19 @@ section #container-perro-gato #perro-gato .display-animal .boton-animal:hover {
   text-decoration: underline 1px;
 }
 @media screen and (max-width: 900px) {
+  section #container-perro-gato #perro-gato .display-animal .boton-animal {
+    width: 160px;
+    height: 70px;
+    border-radius: 8px;
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+}
+@media screen and (max-width: 900px) {
   section #container-perro-gato #perro-gato .display-animal {
     margin-bottom: 3em;
+    width: 95%;
+    padding: 0.5em;
   }
 }
 section .viejitos {
@@ -218,6 +239,11 @@ section .viejitos .vieji-seccion .display-animal {
   padding: 2em;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+@media screen and (max-width: 900px) {
+  section .viejitos .vieji-seccion .display-animal img {
+    width: 95%;
+  }
+}
 section .viejitos .vieji-seccion .display-animal .boton-animal {
   width: 220px;
   height: 100px;
@@ -232,6 +258,22 @@ section .viejitos .vieji-seccion .display-animal .boton-animal:hover {
   transform: scale(1.02);
   transition: 0.2s;
   text-decoration: underline 1px;
+}
+@media screen and (max-width: 900px) {
+  section .viejitos .vieji-seccion .display-animal .boton-animal {
+    width: 160px;
+    height: 70px;
+    border-radius: 8px;
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+}
+@media screen and (max-width: 900px) {
+  section .viejitos .vieji-seccion .display-animal {
+    margin-bottom: 3em;
+    width: 80%;
+    padding: 0.5em;
+  }
 }
 
 footer {

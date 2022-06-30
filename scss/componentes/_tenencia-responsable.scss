@@ -48,6 +48,10 @@
         a{
           color: map-get($map: $colores, $key: color6);
         }
+
+        @media screen and (max-width: 900px) {
+          font-size: nth($list: $size, $n: 1);
+        }
       }
     }
 }
